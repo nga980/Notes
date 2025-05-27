@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Light theme -->
+    <style name="Base.Theme.Notes" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Màu chủ đạo cho light mode -->
+        <item name="colorPrimary">@color/my_light_primary</item>
+        <item name="colorSecondary">@color/my_light_secondary</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimary</item>
+
+    </style>
+
+    <style name="Theme.Notes" parent="Base.Theme.Notes" />
+</resources>

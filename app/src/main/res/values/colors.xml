@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="my_light_primary">#6200EE</color>
+    <color name="my_light_secondary">#03DAC5</color>
+
+    <color name="my_dark_primary">#BB86FC</color>
+    <color name="my_dark_secondary">#03DAC5</color>
+
+    <color name="colorPrimary">#292929</color>
+    <color name="colorPrimaryDark">#292929</color>
+    <color name="colorAccent">#FDBB3E</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorSearchIcon">#D8D8D8</color>
+    <color name="colorTextHint">#7B7878</color>
+    <color name="colorQuickActionsBackground">#F2F0E2</color>
+    <color name="colorIcons">#A4A4A4</color>
+    <color name="colorTextSubtitle">#ECECEC</color>
+    <color name="colorDefaultNoteColor">#303030</color>
+    <color name="colorNoteSubtitleText">#FAFAFA</color>
+    <color name="colorMiscellaneousBackground">#171717</color>
+    <color name="colorNoteColor2">#FDBB3E</color>
+    <color name="colorNoteColor1">#FF4B42</color>
+    <color name="colorNoteColor3">#FF4B42</color>
+    <color name="colorNoteColor4">#3F51B5</color>
+    <color name="colorNoteColor5">#000000</color>
+    <color name="colorDelete">#FF4B42</color>
+    <color name="colorSearchBackground">#333333</color>
+</resources>

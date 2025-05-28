@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.notes.R;
 import com.example.notes.entities.Note;
+import com.example.notes.listeners.NotesListener;
 import com.makeramen.roundedimageview.RoundedImageView;
 
 // InputStream và IOException không còn cần thiết ở đây nếu chỉ dùng decodeFile
@@ -27,11 +28,12 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
 
     private static final String TAG = "NotesAdapter";
     private List<Note> notes;
-    // private NoteListener noteListener;
+    private NotesListener notesListener;
 
-    public NotesAdapter(List<Note> notes) { // , NoteListener noteListener) {
+
+    public NotesAdapter(List<Note> notes, NotesListener notesListener) {
         this.notes = notes;
-        // this.noteListener = noteListener;
+        this.notesListener = notesListener;
     }
 
     @NonNull
@@ -48,9 +50,12 @@ public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteViewHold
     @Override
     public void onBindViewHolder(@NonNull NoteViewHolder holder, int position) {
         holder.setNote(notes.get(position));
-        // if (noteListener != null && holder.layoutNote != null) {
-        // holder.layoutNote.setOnClickListener(v -> noteListener.onNoteClicked(notes.get(position), position));
-        // }
+        holder.layoutNote.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                notesListener.onNoteClicked(notes.get(position),position);
+            }
+        });
     }
 
     @Override
